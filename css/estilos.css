@@ -32,25 +32,23 @@ body{
     float: left;
 }
 
-.area-lateral { 
-    width: 240px;
+.area-lateral {
+    width: 180px;
     float: right;
+    
 }
 .postagem{
     padding: 20px;
     margin-bottom: 20px;
     background-color: white;
 }
-.conteudo-lateral{
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+
 .texto-lateral{
     font-size: 0.8em;
     padding: 5px;
     border-bottom: 1px dotted #ccc;
 }
+
 
 .rodape{
     text-align: center;
@@ -75,7 +73,13 @@ h1 {
 h3 {
     color: #565656;
     background: #CCC;
-    padding: 5px;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    background: #f7b600;
+    border: px #f7b600;
+    border-style: hidden;
+    
 }
 
 .data-postagem{
@@ -107,4 +111,26 @@ a:link, a:visited {
 
 a:hover{
     text-decoration: underline;
+}
+
+#menu-lateral, ul{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu-lateral a{
+    width: 180px;
+    height: 20px;
+    color: white;
+    padding: 10px;
+    background: url(/Imagens/menu.png) no-repeat left bottom;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-lateral a:hover{
+    background-position: right bottom;
+
 }
