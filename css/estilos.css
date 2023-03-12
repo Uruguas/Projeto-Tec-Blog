@@ -1,29 +1,52 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body{
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #e6e6e6;
+    height: 100%;
 }
-
 
 #cabecalho{
     background-color: #f7b600;
+    height: 30px;
     padding: 15px;
     text-align: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-#area-logo, #menu {
-    padding: 10px;
+
+#area-logo {
+    padding: 5px;
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    margin-bottom: 10px;
+}
+
+#menu-superior li{
+    padding: 5px;
+    text-align: center;
+    float: block;
+    list-style-type: none;
+    display: inline;
 } 
 
 #conteudo{
     width: 920px;
     margin: 0 auto;
     padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 
@@ -35,7 +58,6 @@ body{
 .area-lateral {
     width: 180px;
     float: right;
-    
 }
 .postagem{
     padding: 20px;
@@ -51,10 +73,28 @@ body{
 
 
 .rodape{
-    text-align: center;
-    clear: both;
-    padding: 15px;
-    background-color: #ccc;    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7b600;
+    bottom: 0px;
+    width: 100%;
+    height: 30px; 
+    margin-bottom: 0; 
+}
+/* Gambiarra para fazer o rodape ficar fixo na parte inferior na ava contatos*/
+.rodape-contato{
+    position: absolute;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7b600;
+    bottom: 0px;
+    width: 100%;
+    height: 30px; 
+    margin-bottom: 0; 
 }
 
 h2 {
@@ -124,7 +164,7 @@ a:hover{
     height: 20px;
     color: white;
     padding: 10px;
-    background: url(/Imagens/menu.png) no-repeat left bottom;
+    background: #f7b600 url(/Imagens/menu.png) no-repeat left bottom;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -134,3 +174,52 @@ a:hover{
     background-position: right bottom;
 
 }
+
+
+a:hover, .seleccionado a{
+    background-position: bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7b600;
+	border-radius: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px; 
+    margin-right: 5px;  
+}
+
+input[type="text"], input[type="email"], textarea {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+button[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: #f7b600;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#titulo-formulario{
+    text-align: center;
+    padding: 10px;
+}
+
